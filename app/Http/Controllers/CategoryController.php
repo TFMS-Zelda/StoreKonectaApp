@@ -94,7 +94,7 @@ class CategoryController extends Controller
      */
     public function destroy(Category $category)
     {
-        if ($category->status == 'Inactivo') {
+        if ($category->status == 'No activo') {
             $category->delete();
             return redirect()->route('categories.index')->with('success', '¡Categoría eliminada correctamente!');
         } else {

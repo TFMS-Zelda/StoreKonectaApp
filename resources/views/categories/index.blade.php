@@ -36,7 +36,7 @@
                             <td>
                                 @if ($category->status == 'Activo')
                                 <span class="badge badge-light-success">Activo</span>
-                                @elseif ($category->status == 'Inactivo')
+                                @elseif ($category->status == 'No activo')
                                 <span class="badge badge-light-danger">Inactivo</span>
                                 @endif
                             </td>
